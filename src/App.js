@@ -9,7 +9,7 @@ function App() {
         let count=0;
         const [state,setState] = useState({})
     const getDataFromServer = (city)=>{
-       axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d2c7981dfed5b410991be2839ff35d7c`).then((res)=>{
+       axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=`).then((res)=>{
          console.log(res.data)
          setState(res.data)
        }, count=1)
